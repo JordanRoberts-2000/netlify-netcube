@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <button id="header__hamburgerMenu--container">
+            <div class="header__hamburgerMenu--bar"></div>
+            <div class="header__hamburgerMenu--bar"></div>
+            <div class="header__hamburgerMenu--bar"></div>
+        </button>
+        <div id="header__logo">
+            <svg class="lo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="400 400 700 700" xml:space="preserve" style="enable-background:new 0 0 1500 1500" data-v-c5ff5274=""><g data-v-c5ff5274=""><polygon points="666.6,706.5 666.6,802.8 750,851 833.4,802.8 833.4,706.5 750,658.4 	" class="nc-logo-polygon" data-v-c5ff5274=""></polygon> <path d="M1088.6,559.2l-116.9-67.5c0.2-2,0.3-3.9,0.3-6c0-36.8-29.9-66.7-66.7-66.7c-36.8,0-66.7,29.9-66.7,66.7
+                s29.9,66.7,66.7,66.7c14.3,0,27.5-4.5,38.3-12.2l88.9,51.3v293.8l-80.9-46.7V638.3L750,521.8L576.4,622.1l-165-95.3v423.4
+                l116.8,67.4c1.7,35.3,30.8,63.4,66.5,63.4c36.8,0,66.7-29.9,66.7-66.7s-29.9-66.7-66.7-66.7c-17.4,0-33.2,6.7-45.1,17.6l-82.2-47.4
+                V623.9l80.9,46.7v200.4L750,987.5l173.6-100.2l165,95.3V559.2z M895.5,838.7l-145.5,84l-145.5-84V670.6l145.5-84l145.5,84V838.7z" class="nc-logo-path" data-v-c5ff5274=""></path></g>
+            </svg>
+            <h3>NetCube</h3>
+            <small id="header__logo--sasu">SASU</small>
+        </div>
+        <nav>
+            <ul id="nav__container--wrapper">
+                <li>Services</li>
+                <li>Products</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home section -->
+        <section id="home__section">
+            <div id="home__textContainer">
+                <h2 id="home__textContainer--main">NetCube</h2>
+                <h1 id="home__textContainer--secondary">Montpellier application development company</h1>
+            </div>
+            <img id="home__section--image" src="images/background.jpg"/>
+        </section>
+        <section id="services__section">
+            <div id="section__titles--textContainer">
+                <h4>OUR SERVICES</h4>
+                <div id="section__titles--underline"></div>
+            </div>
+            <p id="services__paragraph">Netcube supports you in the realization of your application projects</p>
+            <ul id="services__list">
+                <li class="services__list--item">
+                    <div class="services__topContainer">
+                        <span>Listen</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                    </div>
+                    <p>We listen carefully to our clients to deeply understand the issues they encounter</p>
+                </li>
+                <li class="services__list--item">
+                    <div class="services__topContainer">
+                        <span>Simplicity</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                    </div>
+                    <p>We offer simple solutions and take care not to unnecessarily complicate a project</p>
+                </li>
+                <li class="services__list--item">
+                    <div class="services__topContainer">
+                        <span>Quality</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                    </div>
+                    <p>We follow good development practices and ensure the stability and scalability of your applications</p>
+                </li>
+            </ul>
+        </section>
+        <!-- Products section -->
+        <section id="products_section">
+            <div id="section__titles--textContainer">
+                <h4>OUR PRODUCTS</h4>
+                <div id="section__titles--underline"></div>
+            </div>
+            <p id="products__paragraph">
+                Netcube also develops its own products, which allows it to test new 
+                technologies that may prove useful in carrying 
+                out its customers projects
+            </p>
+            <div id="products__grid--container">
+                <div class="products__grid--item">
+                    <img class="products__item--image" src="./images/products/vemfly.png"/>
+                    <p>Buisness flight organisation platform</p>
+                </div>
+                <div class="products__grid--item">
+                    <img class="products__item--image" src="./images/products/dotamemories.jpg"/>
+                    <p>Video game recording service</p>
+                </div>
+                <div class="products__grid--item">
+                    <img class="products__item--image" src="./images/products/circlealarm.png"/>
+                    <p>Intuitive and smart alarm clock for android</p>
+                </div>
+                <div class="products__grid--item">
+                    <img class="products__item--image" src="./images/products/apiflash.png"/>
+                    <p>Developer API for converting URLs and html to images</p>
+                </div>
+                <div class="products__grid--item">
+                    <img class="products__item--image" src="./images/products/chosen11.jpg"/>
+                    <p>Football team composition tool</p>
+                </div>
+                <div class="products__grid--item">
+                    <img class="products__item--image" src="./images/products/streamtim.jpg"/>
+                    <p>Application for streaming torrents via Vlc player</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact__section">
+            <div id="section__titles--textContainer">
+                <h4>CONTACT</h4>
+                <div id="section__titles--underline"></div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-8 mx-auto mt-3 mb-5">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <form name="contact" method="POST" action="/success"
+                                  data-netlify-recaptcha="true" data-netlify="true">
+                                <div class="form-group">
+                                    <label for="name">Nom</label>
+                                    <input name="name" type="text" class="form-control" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input name="email" type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" class="form-control" id="message"></textarea>
+                                </div>
+                                <div class="mb-3" data-netlify-recaptcha="true"></div>
+                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
