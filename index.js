@@ -1,12 +1,16 @@
+// Header style changes on scroll
+
 const header = document.querySelector('header')
 const navList = document.querySelector('#nav__container--wrapper')
 const headerTitle = document.querySelector('#header__logo--title')
+const logoSVG = document.querySelector('.headerSvg')
 const checkHeaderStyles = () => {
     if(window.scrollY !== 0 && !navList.classList.contains('navContainerScrolled')){
         header.style.transitionDuration = '500ms'
         header.style.backgroundColor = '#edf0f1'
         navList.classList.add("navContainerScrolled")
         headerTitle.style.color = 'rgba(0, 0, 0, 0.9)'
+        logoSVG.classList.add("headerSvgScrolled")
         setTimeout(() => {
             header.style.transitionDuration = '0ms'
         },500)
@@ -16,6 +20,7 @@ const checkHeaderStyles = () => {
         header.style.backgroundColor = 'rgba(0, 0, 0, 0.2)'
         navList.classList.remove("navContainerScrolled")
         headerTitle.style.color = 'white'
+        logoSVG.classList.remove("headerSvgScrolled")
         setTimeout(() => {
             header.style.transitionDuration = '0ms'
         },500)
@@ -41,4 +46,22 @@ hamburgerMenu.addEventListener("click", () => {
         hamburgerMenu.children[1].style.opacity = '0'
         hamburgerMenu.children[2].style.transform = 'rotate(-45deg) translateY(-10px)'
     }
+})
+
+// Header nav items auto-scroll
+
+document.querySelector("#nav_home").addEventListener('click', () =>{
+    document.querySelector("#Home").scrollIntoView()
+})
+
+document.querySelector("#nav_services").addEventListener('click', () =>{
+    document.querySelector("#Services").scrollIntoView()
+})
+
+document.querySelector("#nav_products").addEventListener('click', () =>{
+    document.querySelector("#Products").scrollIntoView()
+})
+
+document.querySelector("#nav_contact").addEventListener('click', () =>{
+    document.querySelector("#Contact").scrollIntoView()
 })
